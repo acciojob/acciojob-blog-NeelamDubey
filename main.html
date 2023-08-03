@@ -1,16 +1,87 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <title>Accio Job Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #marquee {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        #marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            from {
+                transform: translateX(0%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .blog-card {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .blog-image {
+            height: 200px;
+            cursor: pointer;
+        }
+        .blog-heading, .blog-description {
+            cursor: pointer;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div id="marquee">
+        <span>Welcome to Acciojobs!</span>
+    </div>
+    <div class="blog-container">
+        <div class="blog-card">
+            <a href="https://acciojob.com/blog/">
+                <img class="blog-image" src="https://images.unsplash.com/flagged/photo-1556514767-5c270b96a005?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI2fHxvcHRpbWl6YXRpb258ZW58MHx8fHwxNjcxMDAyOTIz&ixlib=rb-4.0.3&q=80&w=2000" alt="Blog Image One">
+            </a>
+            <h2 class="blog-heading">
+                <a href="https://acciojob.com/blog/">Brute Force vs. Optimization</a>
+            </h2>
+            <p class="blog-description">
+                We can say that optimization is one step further than the brute-force method of problem solving…
+            </p>
+        </div>
+        <div class="blog-card">
+            <a href="https://acciojob.com/blog/brute-force-vs-optimization/">
+                <img class="blog-image" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDQxfHxjb21wZXRpdHZlJTIwcHJvZ3JhbW1pbmd8ZW58MHx8fHwxNjcwOTk4ODU0&ixlib=rb-4.0.3&q=80&w=2000" alt="Blog Image Two">
+            </a>
+            <h2 class="blog-heading">
+                <a href="https://acciojob.com/blog/brute-force-vs-optimization/">DSA vs. Competitive Programming</a>
+            </h2>
+            <p class="blog-description">
+                DSA or Competitive programming? What is better for you? Questions such as these often put you in a…
+            </p>
+        </div>
+        <div class="blog-card">
+            <a href="https://acciojob.com/blog/dsa-vs-competitive-programming/">
+                <img class="blog-image" src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGxpbmtlZGlufGVufDB8fHx8MTY3MDQ5MTYxNw&ixlib=rb-4.0.3&q=80&w=2000" alt="Blog Image Three">
+            </a>
+            <h2 class="blog-heading">
+                <a href="https://acciojob.com/blog/dsa-vs-competitive-programming/">10 Tips to Optimize Your LinkedIn Profile and Attract Recruiters</a>
+            </h2>
+            <p class="blog-description">
+                As a job seeker, you may wonder how to make your LinkedIn profile stand out to recruiters. Your LinkedIn…
+            </p>
+        </div>
+    </div>
 </body>
-
 </html>
